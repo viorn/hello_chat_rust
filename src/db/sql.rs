@@ -1,9 +1,9 @@
 pub fn create_shema() -> String {
-    "CREATE SCHEMA IF NOT EXISTS APP".to_string()
+    "CREATE SCHEMA IF NOT EXISTS chat".to_string()
 }
 
 pub mod user {
-    pub const TABLE: &str = "app.users";
+    pub const TABLE: &str = "chat.users";
     pub const ID: &str = "id";
     pub const NAME: &str = "name";
     pub const EMAIL: &str = "email";
@@ -56,7 +56,7 @@ pub mod user {
 
 pub mod token {
 
-    pub const TABLE: &str = "app.tokens";
+    pub const TABLE: &str = "chat.tokens";
     pub const TOKEN: &str = "token";
     pub const REFRESH: &str = "refresh";
     pub const USER_ID: &str = "user_id";

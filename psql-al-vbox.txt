@@ -1,3 +1,0 @@
-testdb
-testuser
-qwerty123

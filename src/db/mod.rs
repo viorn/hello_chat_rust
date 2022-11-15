@@ -29,7 +29,7 @@ impl std::fmt::Display for Error {
 pub async fn create_pool() -> Result<DbController, Error> {
     let db = match PgPoolOptions::new()
             .max_connections(5)
-            .connect("postgres://testuser:qwerty123@localhost:5432/testdb")
+            .connect("postgres://postgres:qwerty123@localhost:5432/postgres")
             .await {
         Ok(pool) => DbController {
             pool: pool
